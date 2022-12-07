@@ -1,0 +1,115 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="direksiyon.html"><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href="bukytalk.html"><i class="lnr lnr-chevron-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#portfolio"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Home Fabrika - Online Dans Platformu</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-7 col-md-7 portfolio-block">
+                <div class="owl-carousel portfolio-page-carousel">
+                    <div class="item">
+                        <img src="images/portfolio/homefabrika.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/dans3.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/dansfab2.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="images/portfolio/dan.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="portfolio-page-video embed-responsive embed-responsive-16by9">
+                  <video class="embed-responsive-item" controls autoplay src="https://homefabrika.com/assets/video/tanitim.mp4"></video>
+                </div>
+
+                <!--
+                <div class="portfolio-page-image">
+                    <img src="images/portfolio/1.jpg" alt="">
+                </div>
+                -->
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+                </script>
+            </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Açıklama</h3>
+                    </div>
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user"></i> Home Fabrika</p></li>
+                        <li><p><i class="fa fa-globe"></i> <a href="https://homefabrika.com/" target="_blank">homefabrika.com</a></p></li>
+                    </ul>
+
+                    <p class="text-justify">
+                        Home Fabrika, Dans Fabrikanın bir alt kuruluşu olan online dans eğitim platformudur.
+                        <br><br>
+                        Bu projeyi geliştirirken frontend tarafında Angular 11' i kullandım. Backend olarak PHP dilinde Slim Framework kullanarak Bir RestFull API geliştirdim.
+                        Sistemde Viemo altyapısı ile bir canlı yayın mekanizması var fakat bu mekanizmanın chat kısmını kullanmak içni kullanıcıların vimeo hesabının olması gibi saçma bir
+                        durumdan dolayı Node JS kullanarak kendi chat altyapımızı kurdum. Basit bir mikroservis mantığı ile chat sorununu bu şekilde çözdüm. 
+                        <br> <br>
+                        Sistem bir kullanıcı paneli ve bir de admin paneli ile birlikte 2 tip clienta sahiptir.
+                    </p>
+                    <!-- /Project Description -->
+
+                    <!-- Technology -->
+                    <div class="tags-block">
+                        <div class="block-title">
+                            <h3>Teknolojiler</h3>
+                        </div>
+                        <ul class="tags">
+                            <li><a>Javascript</a></li>
+                            <li><a>Node JS</a></li>
+                            <li><a>Angular 11</a></li>
+                            <li><a>Socket.io</a></li>
+                            <li><a>PHP 7.3</a></li>
+                            <li><a>PHP Slim Framework 3</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Technology -->
+
+                    <!-- Share Buttons -->
+                    <div class="btn-group share-buttons">
+                        <div class="block-title">
+                            <h3>Sosyal Medya</h3>
+                        </div>
+                        <a href="https://www.facebook.com/dansfabrika/" target="_blank" class="btn"><i class="fab fa-facebook"></i> </a>
+                        <a href="https://twitter.com/dansfabrika" target="_blank" class="btn"><i class="fab fa-twitter"></i> </a>
+                        <a href="https://www.instagram.com/dansfabrika/?hl=tr" target="_blank" class="btn"><i class="fab fa-instagram"></i> </a>
+                        <a href="https://www.youtube.com/channel/UCOGI-KsA7IyajIKFkgol_3Q" target="_blank" class="btn"><i class="fab fa-youtube"></i> </a>                        
+                    </div>
+                    <!-- /Share Buttons -->
+                </div>
+                <!-- Project Description -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+21:58:12	656/656	---MC-	301	error ('Moved%20Permanently')	text/html	date:Wed,%2016%20Nov%202022%2018:58:11%20GMT	https://lmpixels.com/demo/kerge-html/one-page/version-1-dark	C:/Users/Erenn/Documents/GitHub/erenbas-portfolio/kerge/lmpixels.com/demo/kerge-html/one-page/version-1-dark.0.delayed	(from )
+21:58:12	0/0	---MC-	301	error ('Moved%20Permanently')	text/html	date:Wed,%2016%20Nov%202022%2018:58:11%20GMT	http://lmpixels.com/demo/kerge-html/one-page/version-1-dark/	C:/Users/Erenn/Documents/GitHub/erenbas-portfolio/kerge/lmpixels.com/demo/kerge-html/one-page/version-1-dark/index.html	(from )
+21:58:12	0/0	---MC-	301	error ('Moved%20Permanently')	text/html	date:Wed,%2016%20Nov%202022%2018:58:11%20GMT	http://lmpixels.com/robots.txt		(from )
