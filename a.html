@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebSocket İstemci</title>
+</head>
+<body>
+  <input type="text" id="mesajInput" placeholder="Mesajınızı girin">
+  <button id="gonderButton">Gönder</button>
+  <ul id="mesajListesi"></ul>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+  <script>
+    const socket = io("https://ws.erenbas.com", {
+withCredentials: true
+});
+
+    const mesajInput = document.getElementById('mesajInput');
+    const gonderButton = document.getElementById('gonderButton');
+    const mesajListesi = document.getElementById('mesajListesi');
+
+    gonderButton.addEventListener('click', () => {
+      const mesaj = mesajInput.value;
+      socket.emit('mesajGonder', mesaj);
+      mesajInput.value = '';
+    });
+
+    socket.on('mesajAl', (mesaj) => {
+      const yeniMesaj = document.createElement('li');
+      yeniMesaj.textContent = mesaj;
+      mesajListesi.appendChild(yeniMesaj);
+    });
+  </script>
+</body>
+</html>
